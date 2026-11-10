@@ -1,6 +1,0 @@
-.categories { display: flex; align-items: center; min-height: 220px; padding: 24px 16px; background: var(--color-sand); }
-.categories__inner { display: grid; grid-template-columns: repeat(4, 1fr); align-items: center; gap: 24px; width: min(100%, 845px); margin: auto; }
-.category { display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--color-muted); font: 500 18px var(--font-ui); transition: color .2s, transform .2s; text-align: center; }
-.category img { width: 82px; height: 82px; object-fit: contain; }
-.category:hover { color: var(--color-espresso); transform: translateY(-3px); }
-@media (max-width: 767px) { .categories__inner { grid-template-columns: repeat(2, 1fr); gap: 26px 12px; } .categories { padding-block: 30px; } .category { font-size: 15px; } .category img { width: 66px; height: 66px; } }
