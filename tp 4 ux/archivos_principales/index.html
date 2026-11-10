@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover Coffea: rich coffee, delicious desserts and a welcoming coffee shop experience.">
+  <meta name="theme-color" content="#30261C">
+  <meta property="og:title" content="Coffea — Coffee & Desserts">
+  <meta property="og:description" content="We serve the richest coffee in the city.">
+  <meta property="og:type" content="website">
+  <title>Coffea — Coffee & Desserts</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&family=Reggae+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#home" aria-label="Coffea home">coffea</a>
+
+      <!-- MOBILE MENU: se abre/cierra de forma nativa, sin JavaScript. -->
+      <details class="mobile-menu">
+        <summary class="mobile-menu__toggle" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </summary>
+        <nav class="mobile-menu__panel" aria-label="Mobile navigation">
+          <a href="#home">Home</a><a href="#coffee">Coffee</a><a href="#dessert">Bakery</a>
+          <a href="#coffee">Shop</a><a href="#about">About</a><a href="#newsletter">Login</a>
+        </nav>
+      </details>
+
+      <nav class="header__nav" aria-label="Primary navigation">
+        <a href="#home">Home</a><a href="#coffee">Coffee</a><a href="#dessert">Bakery</a>
+        <a href="#coffee">Shop</a><a href="#about">About</a><a class="header__login" href="#newsletter">Login</a>
+      </nav>
+      <a class="header__search" href="#newsletter" aria-label="Search">
+        <!-- REEMPLAZAR: ícono SVG de lupa, 24–28 px. -->
+        <img src="assets/icons/search.svg" alt="" width="26" height="26">
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. HERO: reemplazar la fotografía de fondo en css/components/hero.css. -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">WELCOME</p>
+        <h1 id="hero-title">We serve the richest coffee in the city!</h1>
+        <p class="hero__description">Coffee is a language in itself. Discover carefully selected beans, crafted drinks and moments worth sharing.</p>
+        <a class="button button--light" href="#coffee">Order Now</a>
+      </div>
+      <a class="hero__scroll" href="#categories" aria-label="Scroll to categories">↓</a>
+    </section>
+
+    <!-- 2. CATEGORIES: reemplazar los cuatro SVG de assets/icons/cat-*.svg. -->
+    <section class="categories" id="categories" aria-label="Coffee and dessert categories">
+      <div class="categories__inner">
+        <a class="category" href="#coffee">
+          <img src="assets/icons/cat-hot.svg" alt="" width="82" height="82">
+          <span>Hot Coffee</span>
+        </a>
+        <a class="category" href="#coffee">
+          <img src="assets/icons/cat-cold.svg" alt="" width="82" height="82">
+          <span>Cold Coffee</span>
+        </a>
+        <a class="category" href="#coffee">
+          <img src="assets/icons/cat-cup.svg" alt="" width="82" height="82">
+          <span>Cup Coffee</span>
+        </a>
+        <a class="category" href="#dessert">
+          <img src="assets/icons/cat-dessert.svg" alt="" width="82" height="82">
+          <span>Dessert</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 3. OUR SPECIAL COFFEE: cambiar las 4 fotos, nombres, descripciones y precios. -->
+    <section class="products-section" id="coffee" aria-labelledby="coffee-title">
+      <div class="container">
+        <div class="section-heading"><p class="section-heading__eyebrow">DISCOVER OUR MENU</p><h2 id="coffee-title">OUR SPECIAL COFFEE</h2></div>
+        <div class="carousel-wrap">
+          <a class="carousel-arrow carousel-arrow--left" href="#coffee-1" aria-label="Go to first coffee">‹</a>
+          <div class="product-carousel">
+            <article class="product-card" id="coffee-1">
+              <div class="product-card__media">
+                <!-- REEMPLAZAR: foto real del café 1, formato WebP/AVIF recomendado. -->
+                <img src="assets/img/coffee-1.jpg" alt="Cup of freshly prepared coffee" loading="lazy" width="334" height="364">
+                <input class="favorite-toggle" type="checkbox" id="fav-coffee-1">
+                <label class="favorite-label" for="fav-coffee-1"><span aria-hidden="true">♡</span><span class="visually-hidden">Add coffee 1 to favorites</span></label>
+              </div>
+              <div class="product-card__body"><h3>Lungo coffee</h3><p>A smooth and balanced coffee with a rich aroma.</p>
+                <div class="product-card__buy"><data value="200">Rs. 200</data><a href="#newsletter">Order Now</a></div></div>
+            </article>
+            <article class="product-card" id="coffee-2">
+              <div class="product-card__media">
+                <!-- REEMPLAZAR: foto real del café 2. -->
+                <img src="assets/img/coffee-2.jpg" alt="Freshly brewed coffee in a cup" loading="lazy" width="334" height="364">
+                <input class="favorite-toggle" type="checkbox" id="fav-coffee-2"><label class="favorite-label" for="fav-coffee-2"><span aria-hidden="true">♡</span><span class="visually-hidden">Add coffee 2 to favorites</span></label>
+              </div>
+              <div class="product-card__body"><h3>Dalgona coffee</h3><p>Velvety whipped coffee with a delicious finish.</p><div class="product-card__buy"><data value="200">Rs. 200</data><a href="#newsletter">Order Now</a></div></div>
+            </article>
+            <article class="product-card" id="coffee-3">
+              <div class="product-card__media">
+                <!-- REEMPLAZAR: foto real del café 3. -->
+                <img src="assets/img/coffee-3.jpg" alt="Specialty coffee served in a ceramic cup" loading="lazy" width="334" height="364">
+                <input class="favorite-toggle" type="checkbox" id="fav-coffee-3"><label class="favorite-label" for="fav-coffee-3"><span aria-hidden="true">♡</span><span class="visually-hidden">Add coffee 3 to favorites</span></label>
+              </div>
+              <div class="product-card__body"><h3>Cold coffee</h3><p>A refreshing coffee for a bright moment.</p><div class="product-card__buy"><data value="200">Rs. 200</data><a href="#newsletter">Order Now</a></div></div>
+            </article>
+            <article class="product-card" id="coffee-4">
+              <div class="product-card__media">
+                <!-- REEMPLAZAR: foto real del café 4. -->
+                <img src="assets/img/coffee-4.jpg" alt="Coffee with a delicate layer of crema" loading="lazy" width="334" height="364">
+                <input class="favorite-toggle" type="checkbox" id="fav-coffee-4"><label class="favorite-label" for="fav-coffee-4"><span aria-hidden="true">♡</span><span class="visually-hidden">Add coffee 4 to favorites</span></label>
+              </div>
+              <div class="product-card__body"><h3>Americano</h3><p>Classic, aromatic and always satisfying.</p><div class="product-card__buy"><data value="200">Rs. 200</data><a href="#newsletter">Order Now</a></div></div>
+            </article>
+          </div>
+          <a class="carousel-arrow carousel-arrow--right" href="#coffee-4" aria-label="Go to last coffee">›</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. OUR SPECIAL DESSERT: reemplazar las 4 fotos por fotografías de postres. -->
+    <section class="products-section products-section--dessert" id="dessert" aria-labelledby="dessert-title">
+      <div class="container">
+        <div class="section-heading"><p class="section-heading__eyebrow">SOMETHING SWEET</p><h2 id="dessert-title">OUR SPECIAL DESSERT</h2></div>
+        <div class="carousel-wrap">
+          <a class="carousel-arrow carousel-arrow--left" href="#dessert-1" aria-label="Go to first dessert">‹</a>
+          <div class="product-carousel">
+            <article class="product-card" id="dessert-1"><div class="product-card__media">
+              <!-- REEMPLAZAR: foto de postre 1 (por ejemplo, cheesecake). -->
+              <img src="assets/img/dessert-1.jpg" alt="Slice of dessert served on a plate" loading="lazy" width="334" height="364">
+              <input class="favorite-toggle" type="checkbox" id="fav-dessert-1"><label class="favorite-label" for="fav-dessert-1"><span aria-hidden="true">♡</span><span class="visually-hidden">Add dessert 1 to favorites</span></label>
+            </div><div class="product-card__body"><h3>Cheesecake</h3><p>A creamy dessert with a delicate biscuit base.</p><div class="product-card__buy"><data value="200">Rs. 200</data><a href="#newsletter">Order Now</a></div></div></article>
+            <article class="product-card" id="dessert-2"><div class="product-card__media">
+              <!-- REEMPLAZAR: foto de postre 2 (por ejemplo, brownie). -->
+              <img src="assets/img/dessert-2.jpg" alt="Chocolate dessert freshly prepared" loading="lazy" width="334" height="364">
+              <input class="favorite-toggle" type="checkbox" id="fav-dessert-2"><label class="favorite-label" for="fav-dessert-2"><span aria-hidden="true">♡</span><span class="visually-hidden">Add dessert 2 to favorites</span></label>
+            </div><div class="product-card__body"><h3>Chocolate brownie</h3><p>Rich chocolate flavor in every bite.</p><div class="product-card__buy"><data value="200">Rs. 200</data><a href="#newsletter">Order Now</a></div></div></article>
+            <article class="product-card" id="dessert-3"><div class="product-card__media">
+              <!-- REEMPLAZAR: foto de postre 3 (por ejemplo, tartaleta). -->
+              <img src="assets/img/dessert-3.jpg" alt="Homemade fruit tart" loading="lazy" width="334" height="364">
+              <input class="favorite-toggle" type="checkbox" id="fav-dessert-3"><label class="favorite-label" for="fav-dessert-3"><span aria-hidden="true">♡</span><span class="visually-hidden">Add dessert 3 to favorites</span></label>
+            </div><div class="product-card__body"><h3>Fruit tart</h3><p>A sweet and fresh treat for your afternoon.</p><div class="product-card__buy"><data value="200">Rs. 200</data><a href="#newsletter">Order Now</a></div></div></article>
+            <article class="product-card" id="dessert-4"><div class="product-card__media">
+              <!-- REEMPLAZAR: foto de postre 4 (por ejemplo, medialunas o cookies). -->
+              <img src="assets/img/dessert-4.jpg" alt="Freshly baked sweet pastry" loading="lazy" width="334" height="364">
+              <input class="favorite-toggle" type="checkbox" id="fav-dessert-4"><label class="favorite-label" for="fav-dessert-4"><span aria-hidden="true">♡</span><span class="visually-hidden">Add dessert 4 to favorites</span></label>
+            </div><div class="product-card__body"><h3>Sweet pastry</h3><p>Freshly baked and perfect with your coffee.</p><div class="product-card__buy"><data value="200">Rs. 200</data><a href="#newsletter">Order Now</a></div></div></article>
+          </div>
+          <a class="carousel-arrow carousel-arrow--right" href="#dessert-4" aria-label="Go to last dessert">›</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA: reemplazar las dos imágenes decorativas laterales. -->
+    <section class="promo" id="about">
+      <!-- REEMPLAZAR: imagen recortada de una mano sosteniendo granos de café. -->
+      <img class="promo__image promo__image--left" src="assets/img/promo-hand.png" alt="" loading="lazy" width="520" height="335">
+      <div class="promo__content"><h2>Check Out Our Best Coffee Beans</h2><a class="button button--dark" href="#coffee">Explore Our Products <span aria-hidden="true">»</span></a></div>
+      <!-- REEMPLAZAR: imagen decorativa de granos de café dispersos. -->
+      <img class="promo__image promo__image--right" src="assets/img/promo-beans.png" alt="" loading="lazy" width="503" height="335">
+    </section>
+
+    <!-- 6. TESTIMONIALS: reemplazar avatares, nombres, roles y textos por contenido real o placeholders aprobados. -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-heading section-heading--testimonials"><p class="section-heading__script">Come and Join</p><h2 id="testimonials-title">OUR HAPPY CUSTOMERS</h2></div>
+        <div class="testimonial-list">
+          <figure class="testimonial-card" id="t-1"><figcaption class="testimonial-card__person">
+            <!-- REEMPLAZAR: avatar circular del cliente 1 (56 × 56 px). -->
+            <img src="assets/img/avatar-1.jpg" alt="" width="56" height="56" loading="lazy"><span><strong>James Smith</strong><small>Entrepreneur</small></span><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+          </figcaption><blockquote>“The coffee is wonderful and the atmosphere makes every visit special. I will definitely come back!”</blockquote></figure>
+          <figure class="testimonial-card testimonial-card--featured" id="t-2"><figcaption class="testimonial-card__person">
+            <!-- REEMPLAZAR: avatar circular del cliente 2 (56 × 56 px). -->
+            <img src="assets/img/avatar-2.jpg" alt="" width="56" height="56" loading="lazy"><span><strong>Sarah Johnson</strong><small>Designer</small></span><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+          </figcaption><blockquote>“A cozy place, friendly people and delicious desserts. Coffea has become my favorite coffee spot.”</blockquote></figure>
+          <figure class="testimonial-card" id="t-3"><figcaption class="testimonial-card__person">
+            <!-- REEMPLAZAR: avatar circular del cliente 3 (56 × 56 px). -->
+            <img src="assets/img/avatar-3.jpg" alt="" width="56" height="56" loading="lazy"><span><strong>Michael Brown</strong><small>Photographer</small></span><span class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span>
+          </figcaption><blockquote>“Great flavor, beautiful presentation and a lovely place to meet friends.”</blockquote></figure>
+        </div>
+        <nav class="testimonial-dots" aria-label="Choose testimonial"><a href="#t-1" aria-label="Testimonial 1"></a><a href="#t-2" aria-label="Testimonial 2"></a><a href="#t-3" aria-label="Testimonial 3"></a></nav>
+      </div>
+    </section>
+
+    <!-- 7. NEWSLETTER: formulario de demostración, no envía datos a un servidor. -->
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <!-- REEMPLAZAR: imagen decorativa de granos de café a la izquierda. -->
+      <img class="newsletter__beans newsletter__beans--left" src="assets/img/newsletter-beans.png" alt="" loading="lazy" width="482" height="321">
+      <div class="newsletter__content"><h2 id="newsletter-title">Subscribe to our newsletter</h2><p>Join in and get 15% off your first order!</p>
+        <form class="newsletter-form" action="#" method="get">
+          <label class="visually-hidden" for="newsletter-email">Your email address</label>
+          <span class="newsletter-form__icon" aria-hidden="true">✉</span>
+          <input id="newsletter-email" name="email" type="email" placeholder="Enter your email address" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <!-- REEMPLAZAR: duplicado espejado de la imagen de granos (o usar la misma imagen). -->
+      <img class="newsletter__beans newsletter__beans--right" src="assets/img/newsletter-beans.png" alt="" loading="lazy" width="482" height="321">
+    </section>
+  </main>
+
+  <!-- 8. FOOTER: reemplazar destinos # por enlaces reales cuando estén definidos. -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand"><a href="#home" class="footer__logo">Coffea</a><p>Good coffee. Good moments.</p></div>
+      <nav class="footer__column" aria-label="Privacy links"><h2>PRIVACY</h2><a href="#privacy">Privacy policy</a><a href="#terms">Terms of use</a><a href="#cookies">Cookie policy</a></nav>
+      <nav class="footer__column" aria-label="Services links"><h2>SERVICES</h2><a href="#coffee">Our coffee</a><a href="#dessert">Bakery</a><a href="#newsletter">Newsletter</a></nav>
+      <nav class="footer__column" aria-label="About links"><h2>ABOUT US</h2><a href="#about">Our story</a><a href="#about">Our team</a><a href="#about">Contact</a></nav>
+      <nav class="footer__column" aria-label="Information links"><h2>INFORMATION</h2><a href="#information">Plans &amp; pricing</a><a href="#information">Careers</a><a href="#information">FAQ</a></nav>
+      <nav class="footer__column footer__social" aria-label="Social media"><h2>SOCIAL MEDIA</h2><div class="footer__social-links">
+        <!-- REEMPLAZAR: íconos SVG de X, Instagram, Facebook y LinkedIn; completar URLs reales. -->
+        <a href="#" aria-label="Coffea on X">𝕏</a><a href="#" aria-label="Coffea on Instagram">◎</a><a href="#" aria-label="Coffea on Facebook">f</a><a href="#" aria-label="Coffea on LinkedIn">in</a>
+      </div></nav>
+    </div>
+    <p class="footer__copyright">© 2026 Coffea. All rights reserved.</p>
+  </footer>
+</body>
+</html>
