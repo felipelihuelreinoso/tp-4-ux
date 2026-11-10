@@ -1,0 +1,8 @@
+.container { width: min(calc(100% - 32px), var(--container)); margin-inline: auto; }
+.section-heading { text-align: center; margin-bottom: 42px; }
+.section-heading h2 { margin: 0; color: var(--color-espresso); font: 600 var(--fs-h2)/1.25 var(--font-display); letter-spacing: .04em; }
+.section-heading__eyebrow { margin: 0 0 10px; color: var(--color-muted); font: 500 12px var(--font-ui); letter-spacing: .22em; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 52px; padding: 14px 32px; border-radius: var(--radius-pill); font: 500 16px var(--font-body); transition: transform .2s ease, background-color .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button--light { background: var(--color-white); color: var(--color-espresso); font-size: 18px; padding: 16px 40px; }
+.button--dark { background: var(--color-espresso); color: var(--color-bg); }

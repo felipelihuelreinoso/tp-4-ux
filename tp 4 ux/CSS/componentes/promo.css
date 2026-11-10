@@ -1,0 +1,7 @@
+.promo { position: relative; display: flex; align-items: center; justify-content: center; min-height: 335px; padding: 48px 24px; overflow: hidden; background: var(--color-sand); text-align: center; }
+.promo__content { position: relative; z-index: 1; width: min(100%, 430px); }
+.promo h2 { margin: 0 0 24px; font: 600 var(--fs-cta)/1.25 var(--font-display); color: #17120e; }
+.promo__image { position: absolute; top: 0; height: 100%; width: 28%; object-fit: cover; }
+.promo__image--left { left: 0; object-position: right center; }
+.promo__image--right { right: 0; object-position: left center; }
+@media (max-width: 767px) { .promo { min-height: 300px; } .promo__image { display: none; } .promo h2 { font-size: 32px; } }
